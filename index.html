@@ -3,28 +3,33 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
-    <title>RPG - Dragon Repeller</title>
+    <title>Palindrome Checker</title>
 </head>
 <body>
-    <div id="game">
-        <div id="stats">
-            <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
-            <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
-            <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
-        </div>
-        <div id="controls">
-            <button id="button1">Go to store</button>
-            <button id="button2">Go to cave</button>
-            <button id="button3">Fight dragon</button>
-        </div>
-        <div id="monsterStats">
-            <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
-            <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
-        </div>
-        <div id="text">
-            Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
-        </div>
+  <main class="container">
+  <div id="app">
+    <h1 class="title">Is it a Palindrome? </h1>
+    <div class="palindrome-div">
+      <label for = "text-input">Enter in text to check for a palindrome:
+        </label> 
+      <input class = "palindrome-input" 
+      id="text-input" 
+      value type="text" 
+      required
+      />
+      <button class="palindrome-btn" id="check-btn">Check</button>
+      <div class="results-div" id="result">
+        <p id="result"</p>
+      </div>
     </div>
+    </div>
+  <div id="info">
+    <p class="definition">
+    <span role=
+    "img" aria-label="light-bulb">💡</span> A <dfn>palindrome</dfn> is a word or sentence that's spelled the same way, both forward and backward, ignoring punctuation, case, and spacing.
+      </p>
+    </div>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
